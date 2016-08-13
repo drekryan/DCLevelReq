@@ -26,44 +26,28 @@ public class DCLevelReq extends CustomRequirement {
         Server server = player.getServer();
         PluginManager pm = server.getPluginManager();
 
-        System.out.print("Player: " + player.getDisplayName());
-        System.out.print("Testing Reqs...");
-
         if (pm == null) {
-            System.out.print("PM not found");
             return false;
         }
 
         DwarfCraft dwarfCraft = getDwarfCraft(pm);
         if (dwarfCraft == null) {
-            System.out.print("DC Not Found");
-
             server.getConsoleSender().sendMessage("[DCLevelReq] DwarfCraft was not found. Failing all DCLevel Requirements...");
             return false;
         }
 
-        DCPlayer dcPlayer = new DCPlayer(dwarfCraft, player);
+        DCPlayer dcPlayer = dwarfCraft.getDataManager().find(player);
         int skillID = Integer.parseInt((String) map.get("SkillID"));
         int reqLevel = Integer.parseInt((String)map.get("ReqLevel"));
 
-        System.out.print("Race: " + dcPlayer.getRace());
-
         if (skillID != 0 && reqLevel != 0) {
-            System.out.print("SkillID: " + skillID);
             int skillLevel = dcPlayer.getSkillLevel(skillID);
 
-            System.out.print("SkillLevel: " + skillLevel);
-            System.out.print("ReqLevel: " + reqLevel);
-
             if (skillLevel >= reqLevel) {
-                System.out.print("Test Passed");
-
                 return true;
             }
         }
 
-
-        System.out.print("Test Failed");
         return false;
     }
 
