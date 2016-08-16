@@ -4,15 +4,28 @@
     <groupId>com.Drekryan</groupId>
     <artifactId>DCLevelReq</artifactId>
     <name>DCLevelReq</name>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <version>1.0</version>
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>drekryan-repo</name>
+            <url>http://maven.drekryan.com/artifactory/plugins-release-local</url>
+        </repository>
+    </distributionManagement>
 
     <repositories>
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots</url>
         </repository>
+        <repository>
+            <id>drekryan-repo</id>
+            <url>http://maven.drekryan.com/artifactory/libs-release-local</url>
+        </repository>
     </repositories>
+
     <dependencies>
         <!--Spigot API-->
         <dependency>
@@ -26,6 +39,20 @@
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
             <version>1.10.2-R0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--DwarfCraft API-->
+        <dependency>
+            <groupId>com.Jessy1237</groupId>
+            <artifactId>DwarfCraft</artifactId>
+            <version>3.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--Quests Requirements API-->
+        <dependency>
+            <groupId>me.blackvein</groupId>
+            <artifactId>CustomRequirement</artifactId>
+            <version>2.6.8</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

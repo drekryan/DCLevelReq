@@ -13,7 +13,7 @@ import java.util.Map;
 public class DCLevelReq extends CustomRequirement {
 
     public DCLevelReq() {
-        this.setName("DwarfCraft Level Requirement");
+        this.setName("DCLevelReq");
         this.setAuthor("Drekryan");
         this.addData("SkillID");
         this.addData("ReqLevel");
