@@ -1,4 +1,4 @@
-package com.Drekryan.DCLevelReq;
+package com.Drekryan.DCLevelReq.DCLevelReq-Quests;
 
 import com.Jessy1237.DwarfCraft.DCPlayer;
 import com.Jessy1237.DwarfCraft.DwarfCraft;

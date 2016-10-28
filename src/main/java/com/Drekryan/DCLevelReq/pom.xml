@@ -2,9 +2,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.Drekryan</groupId>
-    <artifactId>DCLevelReq</artifactId>
+    <artifactId>DCLevelReq-parent</artifactId>
     <name>DCLevelReq</name>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <version>1.0</version>
 
     <distributionManagement>
@@ -26,6 +26,11 @@
         </repository>
     </repositories>
 
+    <modules>
+        <module>DCLevelReq-Quests</module>
+        <module>DCLevelReq-Beton</module>
+    </modules>
+
     <dependencies>
         <!--Spigot API-->
         <dependency>
@@ -45,15 +50,23 @@
         <dependency>
             <groupId>com.Jessy1237</groupId>
             <artifactId>DwarfCraft</artifactId>
-            <version>3.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <!--Quests Requirements API-->
-        <dependency>
-            <groupId>me.blackvein</groupId>
-            <artifactId>CustomRequirement</artifactId>
-            <version>2.6.8</version>
+            <version>3.1.2</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.5</source>
+                        <target>1.5</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
