@@ -4,19 +4,19 @@
     <parent>
         <groupId>com.Drekryan</groupId>
         <artifactId>DCLevelReq-parent</artifactId>
-        <version>1.0</version>
+        <version>0.1</version>
     </parent>
     <artifactId>DCLevelReq-Quests</artifactId>
     <name>DCLevelReq-Quests</name>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>0.1</version>
 
     <dependencies>
         <!--Quests Requirements API-->
         <dependency>
             <groupId>me.blackvein</groupId>
             <artifactId>CustomRequirement</artifactId>
-            <version>2.6.8</version>
+            <version>2.7.3</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

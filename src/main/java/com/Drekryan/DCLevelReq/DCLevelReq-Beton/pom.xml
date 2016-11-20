@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.Drekryan</groupId>
         <artifactId>DCLevelReq-parent</artifactId>
-        <version>1.0</version>
+        <version>0.1</version>
     </parent>
     <artifactId>DCLevelReq-Beton</artifactId>
     <name>DCLevelReq-Beton</name>

@@ -1,4 +1,4 @@
-# DCLevelReq Quest Requirement [![Build Status](http://ci.drekryan.com/buildStatus/icon?job=DCLevelReq)](http://ci.drekryan.com/job/DCLevelReq/)
+# DCLevelReq Quest Requirement
 
 Author: [Drekryan](https://www.github.com/Drekryan)
 
