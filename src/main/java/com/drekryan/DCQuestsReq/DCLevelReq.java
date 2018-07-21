@@ -1,4 +1,4 @@
-package com.Drekryan.DCLevelReq.DCLevelReq-Quests;
+package com.drekryan.DCQuestsReq.DCLevelReq;
 
 import com.Jessy1237.DwarfCraft.DCPlayer;
 import com.Jessy1237.DwarfCraft.DwarfCraft;
@@ -32,7 +32,7 @@ public class DCLevelReq extends CustomRequirement {
 
         DwarfCraft dwarfCraft = getDwarfCraft(pm);
         if (dwarfCraft == null) {
-            server.getConsoleSender().sendMessage("[DCLevelReq] DwarfCraft was not found. Failing all DCLevel Requirements...");
+            server.getConsoleSender().sendMessage("[DCQuestsReq] DwarfCraft was not found. Failing all DCLevel Requirements...");
             return false;
         }
 

@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.drekryan</groupId>
+    <artifactId>DCQuestsReq</artifactId>
+    <name>DCQuestRequirements</name>
+    <packaging>jar</packaging>
+    <version>0.2</version>
+
+    <repositories>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- Spigot API -->
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.13-pre7-R0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- DwarfCraft 4.2.0 -->
+        <dependency>
+            <groupId>com.Jessy1237</groupId>
+            <artifactId>DwarfCraft</artifactId>
+            <version>4.2.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--Quests Requirements API-->
+        <dependency>
+            <groupId>me.blackvein</groupId>
+            <artifactId>CustomRequirement</artifactId>
+            <version>3.2.7</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>
